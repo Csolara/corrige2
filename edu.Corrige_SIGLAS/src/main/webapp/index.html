@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link href="CSS.css" rel="stylesheet">
+	<title>Corrige</title>
+	<!--Poner color de fondo diferente a cada zona-->
+	<!--Si se está escribiendo color azulito en la caja-->
+</head>
+
+<body>	
+	<form action="#" method="post" class="tabla1">		
+			<!--Entradas de texto normal de solo letras-->
+			<legend>Datos personales</legend>
+			<label>Nombre
+				<input name="nombre">
+			</label>
+
+			<label for="apel">Apellidos
+				<input name="apellidos">
+			</label>
+
+			<label>
+				<!--DNI como si fuera contraseña obligando a tener una estructura de DNI-->
+				<legend>DNI</legend>
+				<input name="DNI">
+				<legend>Descripción física</legend>
+				<!--Se quiere que sea una entrada de texto de varias líneas-->
+				<input name="desfis">
+			</label>	
+	</form>		
+	<form class="tabla2">		
+			<legend>Selección</legend>
+			<select required name="clase">
+		<!--La primera opción debe salir por defecto y no poder elegirse más veces-->
+				<option value="" disabled selected>¿En qué clase estas?</option>
+				<option value="0">CMI1</option>
+				<option value="1">CMI2</option>
+				<option value="2">CSI1</option>
+				<option value="3">CSI2</option>
+			</select>	
+		<!--Casilla de pulsar para verificar si esta conforme con nosotros, es obligatoria de contestar-->
+	</form>	
+	<button type="reset">Borrar</button>
+	<button type="submit">Enviar</button>
+</body>
+
+</html>
